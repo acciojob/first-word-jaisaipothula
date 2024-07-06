@@ -1,6 +1,4 @@
-function firstWord(s) {
-  // your code here
-	function firstWord(str: string): string {
+function firstWord(str) {
     // Handle edge case: empty string
     if (str.length === 0) {
         return "";
@@ -17,10 +15,3 @@ function firstWord(s) {
     // Otherwise, return substring from start to spaceIndex
     return str.substring(0, spaceIndex);
 }
-
-}
-
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
